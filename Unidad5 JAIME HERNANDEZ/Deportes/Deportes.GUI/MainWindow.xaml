@@ -1,0 +1,23 @@
+﻿<Window x:Class="Deportes.GUI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Deportes.GUI"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="400" Width="300" FontSize="14" Background="#04c582">
+	<Border Background="#2e3137" CornerRadius="20" Margin="20">
+		<StackPanel Margin="20">
+
+			<Label Content="Log in" Foreground="White" FontSize="25" HorizontalAlignment="Center"/>
+			<Separator></Separator>
+			<Label Content="Username" Foreground="White"/>
+			<ComboBox x:Name="cmbUsuario"  Width="200" Background="#545d6a"></ComboBox>
+			<Label Content="Password" Foreground="White"/>
+			<PasswordBox x:Name="txbContraseña" Width="200" Background="#545d6a" Foreground="White"></PasswordBox>
+			<Button Name="btnEntrar" Click="btnEntrar_Click" Content="Entrar" Margin="60 10" Background="#545d6a" FontSize="18"/>
+			<Button Name="btnSalir" Click="btnSalir_Click" Content="Salir" Margin="60 10" Background="#545d6a" FontSize="18"/>
+			<Button x:Name="btnVer" Click="btnVer_Click" Content="VerEstadisticos" Margin="0,10,20,10" Background="#545d6a" FontSize="18" RenderTransformOrigin="0.394,0.607"/>
+		</StackPanel>
+	</Border>
+</Window>
